@@ -1,14 +1,10 @@
 const router = require("express").Router();
 
-const nameController = require("../controllers/names")
+const { homeRoute, samRoute} = require("../controllers/names")
 
-router.get("/", (req, res) => {
-    res.send(nameController.getBob());
-});
+router.get("/", homeRoute);
 
-router.get("/sue", (req, res) => {
-    res.send(nameController.getSue());
-});
+router.get("/sam", samRoute);
 
 
 module.exports = router;

@@ -1,12 +1,14 @@
-function getBob(){
-    return "Bob";
+
+const homeRoute = (req, res) => {
+    res.send("Stephen");
 }
 
-function getSue(){
-    return "Sue";
+const samRoute = (req, res) => {
+    res.send("Sam");
 }
+
 
 module.exports = {
-    "getBob": getBob,
-    "getSue": getSue
+    homeRoute,
+    samRoute
 }
