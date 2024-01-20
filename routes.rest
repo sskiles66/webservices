@@ -1,0 +1,16 @@
+
+Get all contacts:
+http://localhost:3000/contacts
+https://webservices-stls.onrender.com/contacts
+
+Get first contact:
+http://localhost:3000/contacts/single?id=65a99ba97f4f82e145964bc1
+https://webservices-stls.onrender.com/contacts/single?id=65a99ba97f4f82e145964bc1
+
+Get second contact:
+http://localhost:3000/contacts/single?id=65a99bdc7f4f82e14596d018
+https://webservices-stls.onrender.com/contacts/single?id=65a99bdc7f4f82e14596d018
+
+Get third contact:
+http://localhost:3000/contacts/single?id=65a99c177f4f82e145977d76
+https://webservices-stls.onrender.com/contacts/single?id=65a99c177f4f82e145977d76
