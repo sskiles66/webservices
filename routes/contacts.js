@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const { getAllContacts, getContact } = require("../controllers/contacts")
+const { getAllContacts, getContact, addContact, editContact, deleteContact } = require("../controllers/contacts")
 
 
 
@@ -13,6 +13,12 @@ router.get("/single", async (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     res.send(contact);
 });
+
+router.post("/", addContact);
+
+router.put("/edit/:id", editContact);
+
+router.delete("/deleteOne/:id", deleteContact)
 
 
 

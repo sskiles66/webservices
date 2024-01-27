@@ -14,3 +14,30 @@ https://webservices-stls.onrender.com/contacts/single?id=65a99bdc7f4f82e14596d01
 Get third contact:
 http://localhost:3000/contacts/single?id=65a99c177f4f82e145977d76
 https://webservices-stls.onrender.com/contacts/single?id=65a99c177f4f82e145977d76
+
+Add a contact:
+http://localhost:3000/contacts/
+
+{
+    "firstName": "new",
+    "lastName": "contact",
+    "email": "new@gmail.com",
+    "favoriteColor": "Yellow",
+    "birthday": "September 16"
+
+}
+
+Update a contact: 
+http://localhost:3000/contacts/edit/65b53cfdca4097198b764664 (id is the id of the previous post request for adding)
+
+{
+    "firstName": "new2",
+    "lastName": "contact2",
+    "email": "new2@gmail.com",
+    "favoriteColor": "Yellow2",
+    "birthday": "September 17th"
+
+}
+
+Delete a contact:
+http://localhost:3000/contacts/deleteOne/65b53cfdca4097198b764664
