@@ -15,7 +15,7 @@ const addContact = async (req, res) => {
   const {firstName, lastName, email, favoriteColor, birthday} = req.body;
   const result = await mongodb.getDb().db().collection('contacts').insertOne({firstName, lastName, email, favoriteColor, birthday});
   
-  res.status(200).send(`Inserted id: ${result.insertedId}`);
+  res.status(201).send(`Inserted id: ${result.insertedId}`);
   
   
 };
@@ -46,7 +46,7 @@ const editContact = async (req, res) => {
           ...req.body
         },
       });
-  res.status(200).send(result);
+  res.status(204).send(result);
 
   // res.setHeader('Content-Type', 'application/json');
   // res.status(200).json(result);
