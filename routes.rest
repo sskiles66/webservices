@@ -17,6 +17,7 @@ https://webservices-stls.onrender.com/contacts/single?id=65a99c177f4f82e145977d7
 
 Add a contact:
 http://localhost:3000/contacts/
+https://webservices-stls.onrender.com/contacts/
 
 {
     "firstName": "new",
@@ -29,7 +30,7 @@ http://localhost:3000/contacts/
 
 Update a contact: 
 http://localhost:3000/contacts/edit/65b53cfdca4097198b764664 (id is the id of the previous post request for adding)
-
+https://webservices-stls.onrender.com/contacts/edit/65b540a7c151b608e8f4fcfc
 {
     "firstName": "new2",
     "lastName": "contact2",
@@ -41,3 +42,4 @@ http://localhost:3000/contacts/edit/65b53cfdca4097198b764664 (id is the id of th
 
 Delete a contact:
 http://localhost:3000/contacts/deleteOne/65b53cfdca4097198b764664
+https://webservices-stls.onrender.com/contacts/deleteOne/65b540a7c151b608e8f4fcfc
