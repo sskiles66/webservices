@@ -5,8 +5,8 @@ const doc = {
       title: 'Contacts',
       description: 'Description',
     },
-    host: 'localhost:3000',
-    schemes: ['http'],
+    host: 'https://webservices-stls.onrender.com',
+    schemes: ['https'],
 };
   
 const outputFile = './swagger.json';
