@@ -1,4 +1,6 @@
 const mongodb = require('../db/connect');
+const swaggerJsdoc = require('swagger-jsdoc');
+const { ApiParam, ApiResponse } = swaggerJsdoc;
 
 const { ObjectId } = require('mongodb');
 
@@ -32,8 +34,11 @@ const getContact = async (req) => {
   return result;
 };
 
+
 const editContact = async (req, res) => {
   // res.send("Exists")
+  
+  const {firstName, lastName, email, favoriteColor, birthday} = req.body;
   const {id} = req.params;
   const result = await mongodb
     .getDb()
@@ -43,7 +48,11 @@ const editContact = async (req, res) => {
       { _id: new ObjectId(id) },
       {
         $set: {
-          ...req.body
+          firstName,
+          lastName,
+          email,
+          favoriteColor,
+          birthday,
         },
       });
   res.status(204).send(result);
